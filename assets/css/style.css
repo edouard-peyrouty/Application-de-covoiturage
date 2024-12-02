@@ -1,0 +1,88 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphes */
+p {
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulaires */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse; /* Fusionne les bordures pour éviter les doubles lignes */
+}
+th, td {
+    border: 1px solid black; /* Bordure noire autour des cellules */
+    padding: 8px; /* Espacement interne des cellules */
+    text-align: center; /* Texte centré */
+}
+th {
+    background-color: #f4f4f4; /* Couleur de fond pour l'en-tête */
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Couleur alternée pour les lignes */
+}
+th:hover,td:hover {
+    background-color: #f1f1f1; /* Couleur de survol pour les lignes */
+}
