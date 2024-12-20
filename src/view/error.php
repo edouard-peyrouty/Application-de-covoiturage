@@ -1,0 +1,1 @@
+<p>Problème <?php if($errorMessage) echo ": $errorMessage"?></p>

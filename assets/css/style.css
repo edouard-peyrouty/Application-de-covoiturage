@@ -1,0 +1,179 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #137C8B;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+}
+
+a.img {
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+}
+
+.icones img {
+    height: 40px;
+}
+
+img.icone {
+    max-width: 100%;
+    height: 30pt;
+}
+
+/* Conteneur des éléments de la barre */
+.menu {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    position: absolute; /*Position indépendante*/
+    left: 50%; /* Centre horizontalement par rapport au parent */
+    transform: translateX(-50%); /* Ajuste pour centrer exactement */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Change la couleur au survol */
+nav a:hover, button:hover {
+    background-color: #00bcd4; /* Couleur bleu clair */
+    color: #444;
+    transition: 0.3s;
+}
+
+/* Bootstrap alerts */
+/* https://getbootstrap.com/docs/3.4/components/#alerts */
+.alert {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+main {
+    flex: 1;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+  
+/* https://philipwalton.github.io/solved-by-flexbox/demos/input-add-ons
+/ */
+.InputAddOn {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.InputAddOn-field {
+    flex: 1;
+}
+.InputAddOn-field:not(:first-child) {
+    border-left: 0;
+}
+.InputAddOn-field:not(:last-child) {
+    border-right: 0;
+}
+.InputAddOn-item {
+    background-color: rgba(147, 128, 108, 0.1);
+    color: #666666;
+    font: inherit;
+    font-weight: normal;
+}
+.InputAddOn-field,
+.InputAddOn-item {
+    border: 1px solid rgba(147, 128, 108, 0.25);
+    padding: 0.5em 0.75em;
+}
+.InputAddOn-field:first-child,
+.InputAddOn-item:first-child {
+    border-radius: 2px 0 0 2px;
+}
+.InputAddOn-field:last-child,
+.InputAddOn-item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+table {
+    border-collapse: collapse; /* Fusionne les bordures pour éviter les doubles lignes */
+}
+th, td {
+    border: 1px solid black; /* Bordure noire autour des cellules */
+    text-align: center; /* Texte centré */
+}
+th {
+    background-color: #f4f4f4; /* Couleur de fond pour l'en-tête */
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Couleur alternée pour les lignes */
+}
+
+table a {
+    display: block;
+    text-decoration: none;  /* Supprime la décoration de texte par défaut */
+    text-align: center;  /* Centre le texte à l'intérieur du lien */
+    padding: 8px;
+    color: #137C8B;
+}
+
+table a:hover {
+    background-color: #ddd; /* Couleur de survol pour les lignes */
+    color: #444;
+}
+
+button {
+    border: 1px solid #000; /* Bordure fine noire */
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #137C8B;
+    color: white;
+}
+
+footer {
+    background-color: #137C8B;
+    padding: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
